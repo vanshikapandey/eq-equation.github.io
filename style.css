@@ -42,6 +42,7 @@ nav{
 	border-radius: 5px;
 } */
 .navbar-custom{
+	width: 100%;
 	background-color: #cca65a;
 	backdrop-filter: blur(5px);
 }
@@ -87,15 +88,8 @@ nav{
 }
 
  .head .main-head{
-	/* position:absolute; */
-    color: white;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 35px;
-    padding-top:10vh;
-	/* white-space: nowrap; */
-	word-spacing: 2px;
-	line-height: 6vh;
+
 }
 .head button {
 	background-color: #cca65a;
@@ -381,10 +375,10 @@ nav{
 	background-color: rgb(195, 195, 195);
 }
 
-.quote{
+/* .quote{
 	color: #cca65a;
 	font-size: 36px;
-}
+} */
 .leader{
 	margin-top: 5%;
 	
@@ -399,18 +393,16 @@ nav{
 .leader button{
 	background-color: #cca65a;
 }
-.leader p{
-	font-family: 'Montserrat', sans-serif;
-}
-.leader ul li{
-	font-family: 'Montserrat', sans-serif;
-}
+
 .leader .gold-para{
 	color: #cca65a;
-	padding-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 .leader .quote-line{
-	margin-top: -20vh;
+	margin-top: 10h;
+	font-size: 15px;
+	margin-bottom: 5vh;
 }
 .line{
     border-radius: 5px;
