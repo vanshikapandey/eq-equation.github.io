@@ -11,6 +11,10 @@
 nav{
 	width: 100%;
 }
+/* nav .container-fluid {
+		background: linear-gradient(90deg ,rgba(255,255,255,0) 0% rgba(255,255,255,0.2) 25% rgba(255,255,255,0.2) 75% rgba(255,255,255,0) 100%);
+		box-shadow: 0 0 25px rgba(0,0,0,0.1), inset 0 0 1px rgba(255,255,255,0.6);		
+} */
 /*
 .trans::before{
 	content: "";
@@ -41,10 +45,14 @@ nav{
 	border:2px solid black;
 	border-radius: 5px;
 } */
-.navbar-custom{
+
+.trans{
+	position: fixed;
 	width: 100%;
-	background-color: #cca65a;
-	backdrop-filter: blur(5px);
+	background-color: #cca65a91;
+	/* z-index: 4 !important; */
+    backdrop-filter: blur(12px) saturate(100%);
+    -webkit-backdrop-filter: blur(12px) saturate(50%);
 }
 .navbar img{
 	top:-2;
@@ -55,16 +63,16 @@ nav{
 .main-head img{
 	transform-style: preserve-3d;
 }
-.semicircle{
+/* .semicircle{
 	position: relative; ;
 	width: 100%;
 	margin-bottom: 20%;
-}
+} */
 
 .head img{
 	border-radius: 30px;
 }
-.head .js-tilt{
+.head .main-head img{
 	transform-style: preserve-3d;
 }
 /* .semi {
@@ -102,9 +110,15 @@ nav{
 	font-weight: 700;
 	text-align: center;
 }
+.video-quote{
+	display: flex;
+}
 .description{
 	background-color: #FFFFF0;
 	margin-top: 10%;
+}
+.description-col{
+	display: flex;
 }
 .description .side-image{
 	margin-top: 2%;
@@ -157,38 +171,17 @@ nav{
 	text-align: center;
 	font-size: 18px;
 }
-/* .description .q1 h3::after{
-	content: "";
-	display: block;
-	width:70%;
-	padding-top: 2px;
-	border-bottom: 4px solid #A42B0F;
-	border-radius: 5px;
-} */
+
 .description .q2 h3{
 	color:#7D5986 ;
 	font-weight: 700px;
 }
-/* .description .q2 h3::after{
-	content: "";
-	display: block;
-	width:35%;
-	padding-top: 2px;
-	border-bottom: 4px solid #7D5986;
-	border-radius: 5px;
-} */
+
 .description .q3 h3{
 	color:#10223D ;
 	font-weight: 800px;
 }
-/* .description .q3 h3::after{
-	content: "";
-	display: block;
-	width:25%;
-	padding-top: 2px;
-	border-bottom: 4px solid #10223D;
-	border-radius: 5px;
-} */
+
  .mystory{
 	margin-top: 5%;
 	/* margin-bottom: 5%; */
@@ -427,6 +420,14 @@ footer{
 footer p{
 	font-weight: normal;
 }
+button:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+	/* transform: translateY(-0.45em); */
+
+}
 
 @media only screen and (max-width: 328px){
 	.head button{
@@ -450,15 +451,21 @@ footer p{
 
 
 	.head{
-		margin-bottom: 20%;
+		margin-bottom: 10%;
 	}
-
-	/* .head button{
-		margin-left: 18vh;
-		margin-top: 0.5vh;
-		width: 35%;
-		font-size: 12px;
-	} */
+	.main-head img{
+		width: 50%;
+		height: 50%;
+	}
+	.head .text-center{
+		margin-top: 12vh;
+	}
+	.video-quote{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	.video iframe{
 		width: 180px;
 		height: 180px;
@@ -468,6 +475,9 @@ footer p{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	.video-quote .vid{
+		margin-bottom: 5vh;
 	}
 	.description-col{
 		display: flex;
@@ -480,7 +490,31 @@ footer p{
     } 
     .description .side-image .img-2{
         transform: rotate(0deg);
-    }
+	}
+	.up-ques{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.block-sec{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.description-col .side-image{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2vh;
+	}
+	.block-sec .block-1{
+		margin-bottom: 5vh;
+	}
     .mystory{
         text-align: center;
         margin-top:60%;
@@ -521,7 +555,13 @@ footer p{
     .line{
         margin:auto;
         width: 55%;
-    }
+	}
+	.center-class{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 }
 @media only screen and (min-width: 410px){
 	.head h1{
@@ -626,7 +666,8 @@ footer p{
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font: bold 16px ;
+	font-family: 'Roboto', sans-serif;
 	padding: 50px 50px 60px 50px;
 	margin-top: 80px;
 }
@@ -646,7 +687,7 @@ footer p{
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 }
 
@@ -744,6 +785,7 @@ footer p{
 	display: block;
 	color:  #ffffff;
 	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
 	/* font-weight: bold; */
 	margin-bottom: 20px;
 }
@@ -759,7 +801,7 @@ footer p{
 	cursor: pointer;
 	background-color:  #33383b;
 	border-radius: 2px;
-
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
