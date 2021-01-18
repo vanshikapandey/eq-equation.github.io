@@ -4,6 +4,7 @@
     padding: 0px;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
+	color:#041514;
 }
 body{
 	overflow-x: hidden;
@@ -13,7 +14,10 @@ body{
 		background: linear-gradient(90deg ,rgba(255,255,255,0) 0% rgba(255,255,255,0.2) 25% rgba(255,255,255,0.2) 75% rgba(255,255,255,0) 100%);
 		box-shadow: 0 0 25px rgba(0,0,0,0.1), inset 0 0 1px rgba(255,255,255,0.6);		
 } */
-
+.dark-mode{
+	background-color: black;
+	color: white;
+}
 .nav-link{
 	font-size: 18px;
 	color: #E95D5E;
@@ -324,6 +328,12 @@ body{
 	color:ivory;
 	transform: scale(1.05);
 }
+.partners{
+	margin-top: 5%;
+}
+.programs h4{
+	padding-top: 2vh;	
+}
 .partners .partners-head h4{
 	font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -345,6 +355,10 @@ body{
 .leader h2{
 	font-weight: 600;
 	padding-bottom: 2vh;
+	line-height: 1.2em;
+}
+.leader p{
+	line-height: 1.6em;
 }
 .leader button{
 	background-color: #cca65a;
@@ -385,6 +399,54 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.people{
+	margin-top: 3%;
+}
+.people h4{
+	font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.res-circle {
+	width: 370px;
+	border-radius: 50%;
+	background: #bcd6ff;
+	line-height: 0;
+	position: relative;
+  }
+  .res-circle::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+  }   
+ .circle-txt {
+	position: absolute;
+	padding-left: 2rem;
+	padding-right:2rem;
+	top:25%;
+	bottom: 30%;
+	width: 100%;
+	text-align: center;
+	/* text-align: justify; */
+	font-family: 'Roboto', sans-serif;
+	font-weight: 660;
+	line-height: 3.7vh;
+	font-size: 15px;
+	/* white-space:nowrap; */
+  }
+  blockquote{
+	position: relative;
+  }
+  blockquote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 90px;
+position: absolute;
+left:30px;
+top: -15px;
+color: #353535;
 }
 .line{
     border-radius: 5px;
@@ -559,6 +621,12 @@ button:hover {
 	}
 	.leader .gold-para {
 			white-space: normal;
+	}
+	.about{
+		margin-top:20vh;
+	}
+	.people h4{
+		text-align: center;
 	}
 	.center-class{
 		display: flex;
