@@ -457,7 +457,11 @@ html, body {
 	margin-top: 12%;
 }
 .leader .egg{
-	transform: translateY(-25%);
+	/* transform: translateY(-25%); */
+	margin-top: -40vh;
+}
+.egg img{
+	border-radius: 25px;
 }
 .leader h2{
 	font-weight: 600;
@@ -491,11 +495,17 @@ html, body {
 .leader .top-img img{
 	border-radius: 25px;
 }
+.leader .lead{
+	text-align: center;
+}
+.leader .lead img{
+	border-radius: 25px;
+	
+}
 .leader h5{
 	font-size: 28px;
 	font-weight: 500;
 }
-
 .about{
 	margin-top: 10%;	
 }
@@ -812,8 +822,12 @@ button:hover {
 		margin-top: 15vh;
 		
 	}
+	.leader h2{
+		text-align: center;
+	}
 	.leader .egg {
 		width: 100%;
+		margin-top: 4vh;
 	}
 	.leader .page-content h2{
 		white-space: normal;
@@ -895,6 +909,15 @@ button:hover {
 	}
 	.page-content h2{
 		text-align: center;
+	}
+	.top-img{
+		height: 350px;
+	}
+	.page-layout{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 @media only screen and (min-width: 410px){
