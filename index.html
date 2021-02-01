@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>EQEquation</title>
 
         <!-- style.css -->
@@ -40,6 +41,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
         <!-- aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -53,23 +60,29 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     
+        <!-- tilt.js -->
         <script
         src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
         integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
         crossorigin="anonymous"
       ></script>
 
+        <!-- aos -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+
+      <!-- swiper.js -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     
 
 </head>
 
-<body style="background-color:#fffefc">
+<body>
 
         <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom trans">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <img src="img/EQequation.png" alt="" width="275" class="d-inline-block align-middle mr-2 py-3">
+            <img src="img/EQequation.png" alt=""  class="d-inline-block align-middle mr-2 py-3">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -95,9 +108,9 @@
                   <li><a class="dropdown-item" href="future-leaders.html">Future leaders</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a style="color: black;" class="nav-link" href="#"> Never Alone </a>
-              </li>
+              <!-- <li class="nav-item">
+                <a style="color: black;" class="nav-link" href="neveralone.html"> Never Alone </a>
+              </li> -->
               <!-- <li class="nav-item">
                 <a style="color: black;" class="nav-link disabled" href="partners.html"> Speakers Topics </a>
               </li> -->
@@ -105,8 +118,36 @@
           </div> 
         </div>
           </nav> 
+      
+          <!-- <div class="jumbotron">
+            <div class="container">
+              <h1> This is my Page! </h1>
+              <p> This is an example of what I can do with my newfound knowledge</p>
+            </div>
+          </div> -->
+          <div class="image-container">
+            <img src="img/image.png" />
+            <div class="after ">
+              <div class="col-md-4 col-xs-12 after-head px-5">
+                <div>
+                <h1>Align IQ with EQ to escalate your potential</h1>
+                <h5>Strategically enhancing communities, individuals, and everything in between.</h5>
+              </div>
+                <div>
+                  <button  type="button" class="btn  ms-auto">Book a Webinar</button>
+                </div>
+              </div>
+              <!-- <div class="col-md-1"></div> -->
+              <div class="col-md-8 col-xs-12">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" frameborder="0" height="500" width="100%"></iframe>
+              </div>
+             
+            </div>
+        </div>
 
-       <div class="container-fluid semicircle head">
+       
+
+       <!-- <div class="container-fluid semicircle head">
           <div class="semi col-sm-12 col-xs-12 col-sm-12">
             <div style="margin-top:18vh;" class="col-md-12 col-xs-12 main-head" data-tilt 
             data-tilt-maxTilt="60"
@@ -118,20 +159,22 @@
               <h3 style="margin-bottom: -5vh;">Strategically enhancing communities, individuals, and <br>everything in between. </h3>
             </div>
             <div class="text-center">
-              <button  type="button" class="btn  ms-auto">Book a Webinar</button>
+             
             
             </div>
            </div>
-      </div>
+      </div> -->
 
           <!-- video -->
           <section class="video">
             <div class="container">
               <div class="row ">
                 <div class="video-quote">
-                <div class="col-md-5 col-xs-12  vid">
-                  <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" height="370" width="400"></iframe>
-                </div>
+                  <div  class="col-md-5 col-xs-12 main-head" data-tilt 
+                  data-tilt-maxTilt="60"
+                  >
+                      <img src="img/main.jpg" alt="" height="85%" width="75%">
+                  </div>
                 <div class="col-md-7 col-xs-12  side-quotes">
                   <h4>"In the past jobs were about muscles, now they’re about brains, but in future, they’ll be about the heart." – Minouche Shafik (VP of World Bank)</h4><br>
                   <h4>"The emotional brain responds to an event more quickly than the thinking brain." – Daniel Goleman (Author, Professor at Harvard)</h4><br>
@@ -144,26 +187,26 @@
           </section>
 
           <!-- description -->
-          <section class="description" style="background-color:#fffefc">
+          <section class="description" style="background-color:#ffffff">
             <div class="container">
               <div class="row ">
                 <div class="description-col">
                 <div class="col-md-2 col-xs-12  side-image">
                   <div class="img-1">
-                    <img src="img/a.png" alt="" height="80" width="80">
+                    <img src="img/front-image.jpeg" alt="" height="110" width="150">
                   </div>
                   <div class="img-2">
-                    <img src="img/b.png" alt="" height="100" width="100">
+                    <img src="img/crowned-egg.jpeg" alt="" height="120" width="160">
                   </div>
                   <div class="img-1">
-                    <img src="img/c.png" alt="" height="100" width="120">
+                    <img src="img/broken-egg.jpeg" alt="" height="120" width="160">
                   </div>
                 </div>
                 <div class="col-md-10 col-xs-12" >
                   <div class="up-ques">
                 <div class="col-md-6 col-xs-12 px-5 q1" data-aos="fade-up" data-aos-duration="1000">
                   <div>
-                  <h3 style="font-weight: 800;">What is Emotional<br> Intelligence?</h3></div>
+                  <h3 style="font-weight: 900;">What is Emotional<br> Intelligence?</h3></div>
                     <div class="border-red" style="width: 25%;">
                     </div>
                     <div>
@@ -172,7 +215,7 @@
                 </div>
                 <div class="col-md-6 col-xs-12 px-5 q2" data-aos="fade-up" data-aos-duration="2000">
                   <div>
-                  <h3 style="font-weight: 800;">What is Success?</h3></div>
+                  <h3 style="font-weight: 900;">What is Success?</h3></div>
                   <div class="border-purple" style="width: 30%;">
                   </div>
                   <div>
@@ -183,7 +226,8 @@
               <br><br>
                 <div class="col-md-12 col-xs-12 px-4 q3" data-aos="fade-up" data-aos-duration="2000">
                   <div>
-                <h3 style="font-weight: 700;">What is EQEquation?</h3></div>
+                <h3 style="font-weight: 9
+                00;">What is EQEquation?</h3></div>
                 <div class="border-blue" style="width: 20%;">
                 </div>
                 <div>
@@ -197,7 +241,7 @@
           </section>
 
           <!-- programs -->
-          <section class="programs" style="background-color: #F7F3ED;"> 
+          <section class="programs" style="background-color: #f1efef;"> 
             <div class="container">
               <div class="row">
                 <div class="col-md-1 col-xs-12 side-image">
@@ -215,7 +259,7 @@
                     <h4>Programs</h4>
                     <div class="line" style="width: 15%;"></div>
                     <div class="block-sec px-3">
-                    <div class="col-md-5 col-xs-12 block-1" data-aos="fade-right"     data-aos-duration="2000">
+                    <div class="col-md-4 col-xs-12 block-1" data-aos="fade-right"     data-aos-duration="2000">
                           <div class="border-red"></div>
                           <div>
                             <h4>Leadership from the heart </h4>
@@ -227,7 +271,8 @@
                             <button type="button" class="btn btn-danger ms-auto">Learn More</button
                           ></div>
                       </div>
-                        <div class="col-md-5 col-sm-12 col-xs-12 block-2" data-aos="fade-left" data-aos-duration="2000">
+                      <div class="col-md-2"></div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 block-2" data-aos="fade-left" data-aos-duration="2000">
                           <div class="border-purple">
                           </div>
                             <div>
@@ -241,7 +286,7 @@
                           </div>
                     </div>
                     <div class="block-sec">
-                      <div class="col-md-5 col-sm-12 col-xs-12 block-1" data-aos="fade-right" data-aos-duration="2000">
+                      <div class="col-md-4 col-sm-12 col-xs-12 block-1" data-aos="fade-right" data-aos-duration="2000">
                         <div class="border-blue">
                         </div>
                         <div>
@@ -253,7 +298,8 @@
                         <div>
                           <button type="button" class="btn btn-danger ms-auto">Learn More</button></div>
                         </div>
-                      <div class="col-md-5 col-sm-12 col-xs-12 block-2" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="col-md-2"></div>
+                      <div class="col-md-4 col-sm-12 col-xs-12 block-2" data-aos="fade-left" data-aos-duration="2000">
                         <div class="border-red">
                         </div>
                         <div>
@@ -328,7 +374,7 @@
         </section>  -->
 
           <!-- people  -->
-          <section class="people">
+          <!-- <section class="people">
           <div class="container">
             <div class="row">
               <div class="col-md-12" style="margin-bottom: 5vh;">
@@ -362,7 +408,111 @@
           
           </div>
           </div>
-        </section> 
+        </section>  -->
+          <!-- <section class="people-cards">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper ">
+                      <div class="swiper-slide col-md-4">
+                        <div class="testimonialBox">
+                          <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi possimus ullam illum provident ab quas accusantium dolorem commodi dolorum? Vitae optio fugiat, ipsa ipsum aliquam nisi. Alias, perspiciatis quibusdam? Tempore?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide col-md-4">
+                        <div class="testimonialBox">
+                          <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi possimus ullam illum provident ab quas accusantium dolorem commodi dolorum? Vitae optio fugiat, ipsa ipsum aliquam nisi. Alias, perspiciatis quibusdam? Tempore?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide col-md-4">
+                        <div class="testimonialBox">
+                          <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi possimus ullam illum provident ab quas accusantium dolorem commodi dolorum? Vitae optio fugiat, ipsa ipsum aliquam nisi. Alias, perspiciatis quibusdam? Tempore?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide col-md-4">
+                        <div class="testimonialBox">
+                          <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi possimus ullam illum provident ab quas accusantium dolorem commodi dolorum? Vitae optio fugiat, ipsa ipsum aliquam nisi. Alias, perspiciatis quibusdam? Tempore?</p>
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+                </div>
+                
+              </div>
+            </div>
+          </section> -->
+          <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio error illum quo magni dolores fuga molestiae iusto nisi voluptatum, voluptas nostrum ipsa, nam impedit, rerum omnis hic aut cumque.</p>
+              </div>
+              <div class="swiper-slide">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio error illum quo magni dolores fuga molestiae iusto nisi voluptatum, voluptas nostrum ipsa, nam impedit, rerum omnis hic aut cumque.</p>
+              </div>
+              <div class="swiper-slide">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio error illum quo magni dolores fuga molestiae iusto nisi voluptatum, voluptas nostrum ipsa, nam impedit, rerum omnis hic aut cumque.</p>
+              </div>
+              <div class="swiper-slide">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio error illum quo magni dolores fuga molestiae iusto nisi voluptatum, voluptas nostrum ipsa, nam impedit, rerum omnis hic aut cumque.</p>
+              </div>
+              <div class="swiper-slide">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio error illum quo magni dolores fuga molestiae iusto nisi voluptatum, voluptas nostrum ipsa, nam impedit, rerum omnis hic aut cumque.</p>
+              </div>
+              <div class="swiper-slide">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio error illum quo magni dolores fuga molestiae iusto nisi voluptatum, voluptas nostrum ipsa, nam impedit, rerum omnis hic aut cumque.</p>
+              </div>
+                       </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div>
+          </div> --> 
+
+          <section class="people">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4>What people are saying </h4>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" align="center">
+                  <div class="testimonials">
+                    <div class="content">
+                      <p>Working with Deepa is life changing. She helped me stabalize myself, find my unhelpful thought patterns and help me become self reliant. The more I spent time with her the more I realize all the answers lies within self. I can handle my life and win through it by choosing me and doing the right thing. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"align="center">
+                  <div class="testimonials">
+                    <div class="content">
+                      <p>In a concise and meaningful way, Deepa supported our young women in exploring how to navigate their day to day life and increased their self-awareness. Her EI expertise and 16+years of experience in science and sales shined through as she executed a variety of activities that assisted the young women in discovering the importance of recognizing and even regulating their emotions. Deepa is a force, we enjoyed every second of her workshop and we look forward to her delivering sessions to girls in our program in the near future.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" align="center">
+                  <div class="testimonials">
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio fugit culpa ipsam omnis numquam dolore voluptatem aliquid, odio, totam provident, nam hic quae. Doloremque sit fugiat officia ullam ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nisi cupiditate vero odit ipsam cum temporibus aperiam aspernatur neque facere magni eum officiis voluptates fugit accusamus harum quod voluptatum dicta.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
 
           <!-- partners -->
           <section class="partners">
@@ -372,62 +522,19 @@
               <h4>Partners</h4>
               <div style="width:10%" class="line"></div>
             </div>
-
-              <div class="carousel-partners">
-              <div class="col-md-3 col-xs-12">
-                <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
-                 
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="img/pencils&pistons.png" class="d-block w-100" alt="..." height="200px" width="200px">
-                      <div class="carousel-caption d-none d-md-block">
-                       
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/partner.jpg" class="d-block w-100" alt="..." height="200px" width="200px">
-                      <div class="carousel-caption d-none d-md-block">
-                        <!-- <h5>Second slide label</h5> -->
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-                      </div>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleCaptions1" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleCaptions1" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </a>
-                </div>
-              </div><br>
-              <div class="col-md-2"></div>
-              <div class="col-md-3 col-xs-12">
-                <div id="carouselExampleCaptions3" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="img/partner.jpg" class="d-block w-100" alt="..." height="200px" width="200px">
-                      <div class="carousel-caption d-none d-md-block">
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/GS_logo_black.png" class="d-block w-100" alt="..." height="200px" width="200px"> 
-                      <div class="carousel-caption d-none d-md-block">
-                      </div>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleCaptions3" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleCaptions3" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </a>
-                </div>
+            <div class="partners-img">
+              <div class="col-md-4">
+                <img src="img/pencils&pistons.png" alt="" width="75%" height="75%">
+              </div>
+              <div class="col-md-4">
+                <img src="img/GS_logo_black.png"  alt="" width="75%" height="75%">
+              </div>
+              <div class="col-md-4">
+                <img src="img/partner.jpg" alt="" width="75%" height="75%">
               </div>
             </div>
+
+              
           </div>
         </div>
       </section>
@@ -490,18 +597,88 @@
           <script>
             AOS.init();
           </script>
-          <!-- <script>
-              var docWidth = document.documentElement.offsetWidth;
+           <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: false,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+  });
+</script>
+<!-- <script type="text/javascript">
+  (function(d, m){
+      var kommunicateSettings = 
+          {"appId":"10d35bbb24495bd1f543ad774d4a6fed0","popupWidget":true,"automaticChatOpenOnNavigation":true};
+      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+      window.kommunicate = m; m._globals = kommunicateSettings;
+  })(document, window.kommunicate || {});
 
-              [].forEach.call(
-                document.querySelectorAll('*'),
-                function(el) {
-                  if (el.offsetWidth > docWidth) {
-                    console.log(el);
-                  }
-                }
-              );
-          </script> -->
-          
+</script> -->
 </body>
 </html>
+
+
+<!-- <div class="carousel-partners">
+  <div class="col-md-3 col-xs-12">
+    <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+     
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/pencils&pistons.png" class="d-block w-100" alt="..." height="200px" width="200px">
+          <div class="carousel-caption d-none d-md-block">
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/partner.jpg" class="d-block w-100" alt="..." height="200px" width="200px">
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions1" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions1" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </div><br>
+  <div class="col-md-2"></div>
+  <div class="col-md-3 col-xs-12">
+    <div id="carouselExampleCaptions3" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/partner.jpg" class="d-block w-100" alt="..." height="200px" width="200px">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/GS_logo_black.png" class="d-block w-100" alt="..." height="200px" width="200px"> 
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions3" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions3" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </div>
+</div> -->
