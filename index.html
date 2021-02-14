@@ -44,8 +44,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -70,9 +73,9 @@
         <!-- aos -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
 
-      <!-- swiper.js -->
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
      
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </head>
 
@@ -82,7 +85,7 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom trans">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <img src="img/EQequation.png" alt=""  class="d-inline-block align-middle mr-2 py-3">
+            <img src="img/final-logo-removebg-previe-crop.png" alt=""  class="d-inline-block align-middle mr-2 py-1">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -108,9 +111,9 @@
                   <li><a class="dropdown-item" href="future-leaders.html">Future leaders</a></li>
                 </ul>
               </li>
-              <!-- <li class="nav-item">
-                <a style="color: black;" class="nav-link" href="neveralone.html"> Never Alone </a>
-              </li> -->
+              <li class="nav-item">
+                <a style="color: black;" class="nav-link" href="neveralone.html">Contact Us </a>
+              </li>
               <!-- <li class="nav-item">
                 <a style="color: black;" class="nav-link disabled" href="partners.html"> Speakers Topics </a>
               </li> -->
@@ -474,7 +477,7 @@
             <!-- Add Pagination -->
             <!-- <div class="swiper-pagination"></div>
           </div> --> 
-
+<!--
           <section class="people">
             <div class="container">
               <div class="row">
@@ -482,9 +485,13 @@
                   <h4>What people are saying </h4>
                   <div class="line"></div>
                 </div>
-              </div>
+            
+            <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
+              <div class="carousel-cell"> <p>Working with Deepa is life changing. She helped me stabalize myself, find my unhelpful thought patterns and help me become self reliant. The more I spent time with her the more I realize all the answers lies within self. I can handle my life and win through it by choosing me and doing the right thing. </p></div>
+              <div class="carousel-cell"> <p>Working with Deepa is life changing. She helped me stabalize myself, find my unhelpful thought patterns and help me become self reliant. The more I spent time with her the more I realize all the answers lies within self. I can handle my life and win through it by choosing me and doing the right thing. </p></div>
+              <div class="carousel-cell"> <p>Working with Deepa is life changing. She helped me stabalize myself, find my unhelpful thought patterns and help me become self reliant. The more I spent time with her the more I realize all the answers lies within self. I can handle my life and win through it by choosing me and doing the right thing. </p></div>
             </div>
-            <div class="swiper-container container">
+             <div class="swiper-container container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" align="center">
                   <div class="testimonials">
@@ -509,10 +516,35 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
           </section>
-
-
+        -->
+       <section class="testimonials">
+       <div class="container">
+         <div class="row">
+           <h4>What people have to say about us</h4>
+         </div>
+         <div class="line"></div>
+       </div>
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+          <div class="carousel-cell" style="background: #0416a025;">
+            <p>
+            It all starts with happiness for me. When we take care of our mental health and wellbeing, we are able to be the very best version of ourselves in our private lives and our business and career. Happiness has a big impact on productivity, effectiveness and profit
+          </p>
+          </div>
+          <div class="carousel-cell" style="background: #f88b8732;">
+            <p>
+              In a concise and meaningful way, Deepa supported our young women in exploring how to navigate their day to day life and increased their self-awareness. Her EI expertise and 16+years of experience in science and sales shined through as she executed a variety of activities that assisted the young women in discovering the importance of recognizing and even regulating their emotions. Deepa is a force, we enjoyed every second of her workshop and we look forward to her delivering sessions to girls in our program in the near future.<br><br>
+              <span style="text-align:center;">-SG</span>
+            </p>
+          </div>
+          <div class="carousel-cell" style="background: #cf85f14f;">
+            <p>Working with Deepa is life changing. She helped me stabalize myself, find my unhelpful thought patterns and help me become self reliant. The more I spent time with her the more I realize all the answers lies within self. I can handle my life and win through it by choosing me and doing the right thing. </p>
+          </div>
+          <!-- <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div> -->
+        </div>
+      </section>
 
           <!-- partners -->
           <section class="partners">
@@ -540,58 +572,76 @@
       </section>
     
           <!-- footer -->
-          <footer class="footer-distributed"> 
-      <div class="footer-left col-md-3">
+          <!-- <div class="dummy_page">
+            Mobile responsive footer
+          </div> -->
+          <!-- FOOTER START -->
+          <div class="footer">
+            <div class="container">
           
-        <h3>EQ<span>Equation</span></h3>
+            <div class="col">
+              <h1>Quick Links</h1>
+              <ul>
+                <li><a href="index.html">Home</li></a>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="prgrams.html">Programs</a></li>
+                <li><a href="contact.html">Never Alone</a></li>
+              </ul>
+            </div>
+            </div>
+            <!-- <div class="col" style="width: 120px;"></div> -->
+            <div class="col">
+              <h1></h1>
+              <ul style="color: #f6f5f598;">
+                <li><i class="fa fa-map-marker" style="color: #f6f5f5; padding-right:15px;"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                
+                <li><i class="fa fa-envelope"  style="color: #f6f5f5; padding-right:15px;"></i>ask@eqequation.com</li>
+                
+                <li><i class="fa fa-phone"  style="color: #f6f5f5; padding-right:15px;"></i>+91 999999999</li>
+              </ul>
+            </div>
 
-        <p class="footer-links">
-          <a href="#">Home</a>
-          |
-          <a href="#">My Story</a>
-          |
-          <a href="#">Programs</a>
-          |
-          <a href="#">Testimonials</a>
-          |
-          <a href="#">Partners</a>
-        </p>
-
-        <p class="footer-company-name">© 2020 | All rights reserved</p>
-      </div>
-
-      <div class="footer-center col-md-3">
-        <!-- <div>
-          <i class="fa fa-map-marker"></i>
-            <p><span>309 - Rupa Solitaire,
-            Bldg. No. A - 1, Sector - 1</span>
-            Mahape, Navi Mumbai - 400710</p>
-        </div> -->
-
-        <!-- <div>
-          <i class="fa fa-phone"></i>
-          <p>+91 9999999999</p>
-        </div> -->
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:ask@eqequation.com">ask@eqequation.com</a></p>
-        </div>
-      </div>
-
-      <div class="footer-right col-md-3">
-        <p class="footer-company-about">
-          <span>About the EQEquation</span>
-          </p>
-        <div class="footer-icons">
-          <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <!-- <a href="#"><i class="fa fa-youtube"></i></a> -->
-        </div>
-      </div>
-          </footer>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            
+             <!-- <div class="col">
+              <h1>What we offer</h1>
+              <p style="color: #f6f5f5; font-size:14px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, odit libero! Voluptatum, velit! Labore</p>
+            </div> -->
+          
+            <div class="col social">
+              <h1>Social</h1>
+              <ul>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+              </ul>
+            </div>
+            <div class="col"></div>
+            <div class="col">
+             <h1>Copyright &copy; | All rights reserved</h1>
+              <!-- <ul>
+                <li>About</li>
+                <li>Mission</li>
+                <li>Services</li>
+                <li>Social</li>
+                <li>Get in touch</li>
+              </ul> -->
+            </div>
+            <!-- <div class="col">
+              <h1>Support</h1>
+              <ul>
+                <li>Contact us</li>
+                <li>Web chat</li>
+                <li>Open ticket</li>
+              </ul>
+            </div> -->
+         
+          <div class="clearfix"></div>
+          </div>
+        
+          <!-- END OF FOOTER -->
+ 
+          
+         
           <script type="text/javascript" src="tilt.jquery.js"></script>
 
           <script>
