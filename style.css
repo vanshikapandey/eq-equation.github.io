@@ -391,19 +391,36 @@ html, body {
 .about{
 	margin-top: 10%;	
 }
+.about h1{
+	text-align: center;
+	font-weight: 500;
+	font-size: 50px;
+}
 .about img{
 	/* height:450px; */
 	 /* width:490px; */
 	 height: 100%;
-	 width: 50%;
+	 width: 30%;
 	 /* text-align: center; */
 	/* border-radius: 50%; */
 }
 .about .para{
-	margin-top: 10vh;
+	margin-top: 3vh;
 }
 .about h3{
+	margin-top: 10vh;
 	font-weight: 600;
+}
+.about .about-content{
+	display: flex;
+	margin-top: 5vh;
+}
+.about .about-content img{
+	width: 100%;
+	height: 50%;
+	margin-top: 15vh;
+	border-radius: 20px;
+	/* padding-left: 10%; */
 }
 .carousel-partners{
 	display: flex;
@@ -470,6 +487,14 @@ color: #353535;
 	align-items: center;
 	background-color: #fdfdfa;
 }
+.social-contactus a{
+	/* margin-top: 10vh; */
+	padding-left: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	color: rgb(63, 63, 63);
+}
+
  .msg{
 	border-right: 1px solid gray;
 	padding-left: 35px;
@@ -535,6 +560,7 @@ color: #353535;
  
   .details{
 	  margin:0 auto;
+	  margin-bottom: 5vh;
   }
   .details form{
 	  margin-top: 5%;
@@ -654,39 +680,7 @@ transition: all 0.3s ease 0s;
   }
 
 
-.ft{
-	background-color: #040f55;
-	box-sizing: border-box;
-	min-height: 200px;
-}
-.ft-content{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.ft .social-i{
-	display: flex;
-}
-.ft ul li {
-	list-style-type: none;
-	color: #f6f5f5
-}
-.ft ul li a{
-	text-decoration: none;
-	color: #f6f5f5;
-}
-.ft ul li i{
-	background-color: #f6f5f5;
-	color:#040f55 ;
-	padding:5px 10px 5px 10px;
-	border-radius: 5px;
-}
-.ft .social-i ul li{
-	padding-left: 10px;
-}
-.ft h5,h6{
-	color: #f6f5f5;
-}
+
 
 .line{
     border-radius: 5px;
@@ -945,6 +939,12 @@ button:hover {
 		justify-content: center;
 		align-items: center;
 	}
+	.about-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 @media only screen and (min-width: 410px){
 	.head h1{
@@ -1077,6 +1077,14 @@ button:hover {
   .footer .col ul li a{
 	  text-decoration: none;
 	  color: #f6f5f5;
+	  /* background-colo; */
+  }
+  .footer .social ul li a{
+	  color: #040f55;
+	  background-color: #f6f5f5;
+	  border-radius: 8px;
+	  font-size: 18px;
+	padding: 4px 7px 4px 7px;
   }
   .footer .col ul li i{
 	  padding-right:5px;
@@ -1084,6 +1092,13 @@ button:hover {
   .social ul li {
 	display: inline-block;
 	padding-right: 5px !important;
+	
+  }
+  .social ul li a{
+	  font-size: 20px;
+	  color: #f6f5f5;
+	  padding-left: 10px;
+	  margin-top: 1vh;
   }
   
   .footer .col ul li:hover {
