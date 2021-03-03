@@ -93,10 +93,9 @@ html, body {
 	margin-top: -2vh;
 	margin-left: 0%;
 }
-.navbar-brand img{
-	width: 275px;
+.navbar-brand img {
+    width: 320px;
 }
-
 .video img{
 	border-radius: 30px;
 }
@@ -363,6 +362,7 @@ html, body {
 	padding-top: 20px;
 	padding-bottom: 10px;
 	white-space: nowrap;
+	font-weight: 600;
 }
 .leader .quote-line{
 	margin-top: 10h;
@@ -858,6 +858,9 @@ button:hover {
 	}
 	.leader .gold-para {
 			white-space: normal;
+		}
+	.leader .page-layout .gold-para{
+		font-weight: 600;
 	}
 	.about{
 		margin-top:20vh;
