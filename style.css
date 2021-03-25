@@ -396,10 +396,11 @@ html, body {
 	font-weight: 500;
 	font-size: 50px;
 }
+
 .about .badge img{
-	 height: 90%;
-	 width: 22%;
-	
+	 height: 85%;
+	 width: 15%;
+	float: right;
 }
 .about .para{
 	margin-top: 3vh;
@@ -418,8 +419,8 @@ html, body {
 	font-weight: 300;
 }
 .about .about-content img{
-	width: 95%;
-	height: 40%;
+	width: 100%;
+	height: 65%;
 	margin-top: 15vh;
 	border-radius: 20px;
 	/* padding-left: 10%; */
@@ -913,6 +914,7 @@ button:hover {
 	.about .badge img{
 		width: 60%;
 		height: 90%;
+
 	}
 	/* .image-container{
 		margin-top: 30vh;
